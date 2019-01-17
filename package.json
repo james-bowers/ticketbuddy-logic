@@ -1,0 +1,45 @@
+{
+  "name": "ticketbuddy-logic",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "rm -rf ./_build && tsc",
+    "test": "jest --watch --coverage"
+  },
+  "author": "james@ticketbuddy.co.uk",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^23.3.12",
+    "@types/lodash": "^4.14.119",
+    "jest": "^23.6.0",
+    "lodash": "^4.17.11",
+    "ts-jest": "^23.10.4",
+    "typescript": "^3.1.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "node_modules",
+      "__tests__",
+      "coverage",
+      "_build"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "lib"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "reporters": [
+      "default"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testMatch": [
+      "**/*.spec.(ts)"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./lib",
+    "outDir": "./_build",
+    "target": "es6",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "declaration": true,
+    "sourceMap": true,
+    "typeRoots": ["node_modules/@types"]
+  },
+  "include": ["./lib/**/*.ts"],
+  "exclude": ["node_modules"]
+}
